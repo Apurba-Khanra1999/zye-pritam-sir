@@ -21,6 +21,13 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       /* Clean up Google's translate widget look */
       .goog-te-banner-frame,
@@ -232,86 +239,158 @@
                 </li>
               </ul>
             </div>
+
             <!-- Place this where you want the language selector to appear -->
             <!-- <div id="google_translate_element" style="margin-left: 1rem"></div> -->
+            <!-- <div class="language-selector">
+              <div class="selected-language">
+                <span class="language-flag en"></span>
+                <span class="language-name">English</span>
+                <i class="dropdown-arrow">▼</i>
+              </div>
+              <ul class="language-dropdown">
+                <li data-lang="en">
+                  <span class="language-flag en"></span>English
+                </li>
+                <li data-lang="es">
+                  <span class="language-flag es"></span>Español
+                </li>
+                <li data-lang="fr">
+                  <span class="language-flag fr"></span>Français
+                </li>
+                <li data-lang="de">
+                  <span class="language-flag de"></span>Deutsch
+                </li>
+              </ul>
+            </div> -->
           </nav>
         </div>
       </header>
 
-      <!-- App-Solution-Section-Start -->
-      <section class="row_am app_solution_section">
+      <!-- Banner-Section-Start -->
+      <section class="banner_section">
         <!-- container start -->
         <div class="container">
+          <!-- vertical animation line -->
+          <div class="anim_line">
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            <span><img src="images/anim_line.png" alt="anim_line" /></span>
+          </div>
           <!-- row start -->
           <div class="row">
-            <div class="col-lg-6">
-              <!-- UI content -->
-              <div class="app_text">
-                <div
-                  class="section_title"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="100"
-                >
-                  <h2>
-                    <span>Providing innovative app solution</span> to make
-                    customer life easy to grow.
-                  </h2>
+            <div
+              class="col-lg-6 col-md-12"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <!-- banner text -->
+              <div class="banner_text">
+                <!-- h1 -->
+                <h1>Where Zero <span>means more to Everyone</span></h1>
+                <!-- p -->
+                <p>
+                  No extra Charges for customers. 1 platform for all online
+                  needs. Just Honest, Direct, Affordable service.
+                </p>
+              </div>
+              <!-- app buttons -->
+              <ul class="app_btn">
+                <li>
+                  <a href="#">
+                    <img
+                      class="blue_img"
+                      src="images/appstore_blue.png"
+                      alt="image"
+                    />
+                    <img
+                      class="white_img"
+                      src="images/appstore_white.png"
+                      alt="image"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="blue_img"
+                      src="images/googleplay_blue.png"
+                      alt="image"
+                    />
+                    <img
+                      class="white_img"
+                      src="images/googleplay_white.png"
+                      alt="image"
+                    />
+                  </a>
+                </li>
+              </ul>
+
+              <!-- users -->
+              <!--<div class="used_app">
+              <ul>
+                <li><img src="images/used01.png" alt="image" ></li>
+                <li><img src="images/used02.png" alt="image" ></li>
+                <li><img src="images/used03.png" alt="image" ></li>
+                <li><img src="images/used04.png" alt="image" ></li>
+              </ul>
+              <p>12M + <br> used this app</p>
+            </div>-->
+            </div>
+
+            <!-- banner slides start -->
+            <div
+              class="col-lg-6 col-md-12"
+              data-aos="fade-in"
+              data-aos-duration="1500"
+            >
+              <div class="banner_slider">
+                <div class="left_icon">
+                  <img src="images/message_icon.png" alt="image" />
                 </div>
-                <p data-aos="fade-up" data-aos-duration="1500">
-                  Lorem Ipsum is simply dummy text of the printing and type
-                  setting industry lorem Ipsum has been the industrys standard
-                  dummy text ever since the when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining to make a type speci
-                  men book. It has survived essentially unchanged.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1500">
-                  Standard dummy text ever since the when an unknown printer
-                  took a galley of type and scrambled it to make a type specien
-                  book. It has survived not only five centuries, but also the
-                  leap into electronic typesetting.
-                </p>
+                <div class="right_icon">
+                  <img src="images/shield_icon.png" alt="image" />
+                </div>
+                <div id="frmae_slider" class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="slider_img">
+                      <img src="images/screen.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="slider_img">
+                      <img src="images/screen-1.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="slider_img">
+                      <img src="images/screen-2.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="slider_img">
+                      <img src="images/screen-3.png" alt="image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slider_frame">
+                  <img src="images/mobile_frame_svg.png" alt="image" />
+                </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div
-                class="app_images"
-                data-aos="fade-in"
-                data-aos-duration="1500"
-              >
-                <ul>
-                  <li><img src="images/abt_01.png" alt="" /></li>
-                  <li>
-                    <a
-                      class="popup-youtube play-button"
-                      data-url="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
-                      data-toggle="modal"
-                      data-target="#myModal"
-                      title="About Video"
-                    >
-                      <img src="images/abt_02.png" alt="" />
-                      <div class="waves-block">
-                        <div class="waves wave-1"></div>
-                        <div class="waves wave-2"></div>
-                        <div class="waves wave-3"></div>
-                      </div>
-                      <span class="play_icon"
-                        ><img src="images/play_black.png" alt="image"
-                      /></span>
-                    </a>
-                  </li>
-                  <li><img src="images/abt_03.png" alt="" /></li>
-                </ul>
-              </div>
-            </div>
+            <!-- banner slides end -->
           </div>
           <!-- row end -->
         </div>
         <!-- container end -->
       </section>
-      <!-- App-Solution-Section-end -->
+      <!-- Banner-Section-end -->
 
       <!-- Features-Section-Start -->
       <section class="row_am features_section" id="features">
@@ -426,6 +505,436 @@
       </section>
       <!-- Features-Section-end -->
 
+      <!-- About-App-Section-Start -->
+      <section class="row_am about_app_section">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- about images -->
+              <div
+                class="about_img"
+                data-aos="fade-in"
+                data-aos-duration="1500"
+              >
+                <div class="frame_img">
+                  <img
+                    class="moving_position_animatin"
+                    src="images/about-frame.png"
+                    alt="image"
+                  />
+                </div>
+                <div class="screen_img">
+                  <img
+                    class="moving_animation"
+                    src="images/about-screen.png"
+                    alt="image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- about text -->
+              <div class="about_text">
+                <div
+                  class="section_title"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="100"
+                >
+                  <!-- h2 -->
+                  <h2>Some awesome words <span>about</span> ZYE.</h2>
+
+                  <!-- p -->
+                  <p>
+                    ZYE isn’t just an app — it’s your everyday companion. <br />
+                    From booking cabs to soon bringing food, groceries, and more
+                    to your fingertips, ZYE is designed to simplify modern
+                    living. Smart, fast, and always ready — ZYE puts your city’s
+                    best services in one sleek platform.<br />
+                    One app. All you need. That’s the ZYE way.
+                  </p>
+                </div>
+
+                <!-- UL -->
+                <ul
+                  class="app_statstic"
+                  id="counter"
+                  data-aos="fade-in"
+                  data-aos-duration="1500"
+                >
+                  <li>
+                    <div class="icon">
+                      <img src="images/download.png" alt="image" />
+                    </div>
+                    <div class="text">
+                      <p>
+                        <span class="counter-value" data-count="10">0</span
+                        ><span>M+</span>
+                      </p>
+                      <p>Download</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <img src="images/followers.png" alt="image" />
+                    </div>
+                    <div class="text">
+                      <p>
+                        <span class="counter-value" data-count="08">0 </span
+                        ><span>M+</span>
+                      </p>
+                      <p>Followers</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <img src="images/reviews.png" alt="image" />
+                    </div>
+                    <div class="text">
+                      <p>
+                        <span class="counter-value" data-count="2300">1500</span
+                        ><span>+</span>
+                      </p>
+                      <p>Reviews</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <img src="images/countries.png" alt="image" />
+                    </div>
+                    <div class="text">
+                      <p>
+                        <span class="counter-value" data-count="10">0</span
+                        ><span>+</span>
+                      </p>
+                      <p>Cities</p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- UL end -->
+                <a
+                  href="contact.html"
+                  class="btn puprple_btn"
+                  data-aos="fade-in"
+                  data-aos-duration="1500"
+                  >START FREE TRIAL</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- About-App-Section-end -->
+
+      <!-- ModernUI-Section-Start -->
+      <section class="row_am modern_ui_section">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- UI content -->
+              <div class="ui_text">
+                <div
+                  class="section_title"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="100"
+                >
+                  <h2>The Smart Choice for <span>Modern Living</span></h2>
+                  <p>
+                    In a fast-paced world, convenience isn't a luxury — it's a
+                    necessity.<br />
+                    ZYE brings together essential services like cab booking,
+                    food delivery, and grocery access — all in one intelligent
+                    app. Whether you're commuting, craving, or just planning
+                    your day, ZYE adapts to your lifestyle seamlessly.<br />
+                    Effortless. Reliable. All-in-One. ZYE is the smart choice
+                    for modern living.
+                  </p>
+                </div>
+                <ul class="design_block">
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <h4>Lightning-Fast Bookings</h4>
+                    <p>
+                      Access any service in seconds with an ultra-optimized
+                      interface designed for speed, simplicity, and zero
+                      friction. Book rides, food, flights, and more instantly.
+                    </p>
+                  </li>
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <h4>Secure Transactions</h4>
+                    <p>
+                      Every detail you share—personal or financial—is protected
+                      with bank-grade encryption and real-time threat
+                      monitoring. Your privacy is our priority.
+                    </p>
+                  </li>
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <h4>Premium Experience</h4>
+                    <p>
+                      Printing and typesetting industry lorem Ipsum has been the
+                      industrys standard dummy text of type setting.
+                    </p>
+                  </li>
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <h4>Rewards That Actually Reward You</h4>
+                    <p>
+                      Earn points on every booking and turn them into real
+                      value—redeemable across all services within the ZYE
+                      ecosystem. More bookings, more savings.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <!-- UI Image -->
+              <div
+                class="ui_images"
+                data-aos="fade-in"
+                data-aos-duration="1500"
+              >
+                <div class="left_img">
+                  <img
+                    class="moving_position_animatin"
+                    src="images/modern01.png"
+                    alt="image"
+                  />
+                </div>
+                <!-- UI Image -->
+                <div class="right_img">
+                  <img
+                    class="moving_position_animatin"
+                    src="images/secure_data.png"
+                    alt="image"
+                  />
+                  <img
+                    class="moving_position_animatin"
+                    src="images/modern02.png"
+                    alt="image"
+                  />
+                  <!--<img class="moving_position_animatin" src="images/modern03.png" alt="image" >-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- ModernUI-Section-end -->
+
+      <!-- How-It-Workes-Section-Start -->
+      <section class="row_am how_it_works" id="how_it_work">
+        <!-- container start -->
+        <div class="container">
+          <div class="how_it_inner">
+            <div
+              class="section_title"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="300"
+            >
+              <!-- h2 -->
+              <h2><span>How it works</span> - 3 easy steps</h2>
+              <!-- p -->
+              <p>
+                Download the ZYE App, sign up in seconds, and book your ride
+                with just a tap.
+              </p>
+            </div>
+            <div class="step_block">
+              <!-- UL -->
+              <ul>
+                <!-- step -->
+                <li>
+                  <div
+                    class="step_text"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                  >
+                    <h4>Download app</h4>
+                    <div class="app_icon">
+                      <a href="#"
+                        ><i class="icofont-brand-android-robot"></i
+                      ></a>
+                      <a href="#"><i class="icofont-brand-apple"></i></a>
+                      <a href="#"><i class="icofont-brand-windows"></i></a>
+                    </div>
+                    <p>Download App either for Windows, Mac or Android</p>
+                  </div>
+                  <div class="step_number">
+                    <h3>01</h3>
+                  </div>
+                  <div
+                    class="step_img"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
+                    <img src="images/download_app.jpg" alt="image" />
+                  </div>
+                </li>
+
+                <!-- step -->
+                <li>
+                  <div
+                    class="step_text"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
+                    <h4>Create account</h4>
+                    <span>Login to access. It's Free.</span>
+                    <p>
+                      Sign up free for App account. One account for all devices.
+                    </p>
+                  </div>
+                  <div class="step_number">
+                    <h3>02</h3>
+                  </div>
+                  <div
+                    class="step_img"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                  >
+                    <img src="images/create_account.jpg" alt="image" />
+                  </div>
+                </li>
+
+                <!-- step -->
+                <li>
+                  <div
+                    class="step_text"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                  >
+                    <h4>It’s done, enjoy the app</h4>
+                    <span>Have any questions check with our Team</span>
+                    <p>
+                      Get most amazing app experience,Explore and share the app
+                    </p>
+                  </div>
+                  <div class="step_number">
+                    <h3>03</h3>
+                  </div>
+                  <div
+                    class="step_img"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
+                    <img src="images/enjoy_app.jpg" alt="image" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- video section start -->
+          <div class="yt_video" data-aos="fade-in" data-aos-duration="1500">
+            <!-- animation line -->
+            <div class="anim_line dark_bg">
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+              <span><img src="images/anim_line.png" alt="anim_line" /></span>
+            </div>
+            <div class="thumbnil">
+              <img src="images/yt_thumb.png" alt="image" />
+              <a
+                class="popup-youtube play-button"
+                data-url="#"
+                data-toggle="modal"
+                data-target="#myModal"
+                title="XJj2PbenIsU"
+              >
+                <span class="play_btn">
+                  <img src="images/play_icon.png" alt="image" />
+                  <div class="waves-block">
+                    <div class="waves wave-1"></div>
+                    <div class="waves wave-2"></div>
+                    <div class="waves wave-3"></div>
+                  </div>
+                </span>
+                Let’s see virtually how it works
+                <span>Watch video</span>
+              </a>
+            </div>
+          </div>
+          <!-- video section end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- How-It-Workes-Section-end -->
+
+      <!-- Beautifull-interface-Section start -->
+      <section class="row_am interface_section">
+        <!-- container start -->
+        <div class="container-fluid">
+          <div
+            class="section_title"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            <!-- h2 -->
+            <h2>Beautifull <span>interface</span></h2>
+            <!-- p -->
+            <p>
+              ZYE features a beautifully designed interface that’s clean,
+              intuitive, and user-friendly.
+            </p>
+          </div>
+
+          <!-- screen slider start -->
+          <div class="screen_slider">
+            <div id="screen_slider" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="screen_frame_img">
+                  <img src="images/screen-1.png" alt="image" />
+                </div>
+              </div>
+              <div class="item">
+                <div class="screen_frame_img">
+                  <img src="images/screen-2.png" alt="image" />
+                </div>
+              </div>
+              <div class="item">
+                <div class="screen_frame_img">
+                  <img src="images/screen-3.png" alt="image" />
+                </div>
+              </div>
+              <div class="item">
+                <div class="screen_frame_img">
+                  <img src="images/screen-4.png" alt="image" />
+                </div>
+              </div>
+              <div class="item">
+                <div class="screen_frame_img">
+                  <img src="images/screen-5.png" alt="image" />
+                </div>
+              </div>
+              <div class="item">
+                <div class="screen_frame_img">
+                  <img src="images/screen-3.png" alt="image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- screen slider end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Beautifull-interface-Section end -->
+
       <!-- Download-Free-App-section-Start  -->
       <section class="row_am free_app_section" id="getstarted">
         <!-- container start -->
@@ -494,6 +1003,97 @@
         <!-- container end -->
       </section>
       <!-- Download-Free-App-section-end  -->
+
+      <!-- Story-Section-Start -->
+      <section class="row_am latest_story" id="blog">
+        <!-- container start -->
+        <div class="container">
+          <div
+            class="section_title"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <h2>Read latest <span>story</span></h2>
+            <p>
+              Stay in the loop with the latest updates, features, and what’s
+              brewing inside the ZYE universe.<br />
+              Because every update has a story — and we love telling it.
+            </p>
+          </div>
+          <!-- row start -->
+          <div class="row">
+            <!-- story -->
+            <div class="col-md-4">
+              <div
+                class="story_box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <div class="story_img">
+                  <img src="images/story01.png" alt="image" />
+                  <span>45 min ago</span>
+                </div>
+                <div class="story_text">
+                  <h3>Cool features added!</h3>
+                  <p>
+                    Discover the latest updates that make ZYE faster, smarter,
+                    and even more fun to use.
+                  </p>
+                  <a href="#">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- story -->
+            <div class="col-md-4">
+              <div
+                class="story_box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <div class="story_img">
+                  <img src="images/story02.png" alt="image" />
+                  <span>45 min ago</span>
+                </div>
+                <div class="story_text">
+                  <h3>Top rated app! Yupp.</h3>
+                  <p>
+                    ZYE is winning hearts — rated high by users who love
+                    simplicity and reliability.
+                  </p>
+                  <a href="#">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- story -->
+            <div class="col-md-4">
+              <div
+                class="story_box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <div class="story_img">
+                  <img src="images/story03.png" alt="image" />
+                  <span>45 min ago</span>
+                </div>
+                <div class="story_text">
+                  <h3>Creative ideas on app.</h3>
+                  <p>
+                    We’re constantly innovating — bringing fresh, user-inspired
+                    ideas to life in every update.
+                  </p>
+                  <a href="#">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Story-Section-end -->
 
       <!-- News-Letter-Section-Start -->
       <section class="newsletter_section">
@@ -697,8 +1297,6 @@
       </div>
 
       <div class="purple_backdrop"></div>
-      <!-- Place this where you want the language selector to appear -->
-      <div id="google_translate_element"></div>
     </div>
     <!-- Page-wrapper-End -->
 
@@ -712,6 +1310,8 @@
     <script src="js/aos.js"></script>
     <!-- main-js-Link -->
     <script src="js/main.js"></script>
+
+    <!-- <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
     <!-- <script>
       let googleTranslateInitialized = false;

@@ -56,6 +56,115 @@
         color: #3e3065 !important;
       }
     </style>
+    <style>
+      /* Language Selector Styles */
+      .language-selector {
+        position: relative;
+        display: inline-block;
+        margin-left: 20px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      .selected-language {
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        color: #333;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .selected-language:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .language-flag {
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        margin-right: 8px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 2px;
+      }
+
+      /* Flag images - using base64 encoded SVGs */
+      .language-flag.en {
+        background-image: url("images/english.png");
+      }
+      .language-flag.hi {
+        background-image: url("images/hindi.png");
+      }
+
+      .language-name {
+        margin-right: 5px;
+        font-size: 14px;
+      }
+
+      .dropdown-arrow {
+        font-size: 10px;
+        margin-left: 5px;
+        transition: transform 0.2s;
+      }
+
+      .language-dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        min-width: 150px;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        padding: 8px 0;
+        margin: 5px 0 0;
+        list-style: none;
+      }
+
+      .language-selector:hover .language-dropdown {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .language-selector:hover .dropdown-arrow {
+        transform: rotate(180deg);
+      }
+
+      .language-dropdown li {
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: background 0.2s;
+        color: #333;
+      }
+
+      .language-dropdown li:hover {
+        background: #f5f5f5;
+      }
+
+      /* Hide Google Translate elements */
+      .goog-te-banner-frame {
+        display: none !important;
+      }
+
+      .goog-te-gadget {
+        font-size: 0 !important;
+      }
+
+      .goog-te-combo {
+        opacity: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
+      }
+    </style>
   </head>
 
   <body>
@@ -102,23 +211,30 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
                 </li>
+                <!-- Custom Dropdown in Header -->
+                <div class="language-selector">
+                  <div class="selected-language">
+                    <span class="language-flag en"></span>
+                    <span class="language-name">English</span>
+                    <i class="dropdown-arrow">▼</i>
+                  </div>
+                  <ul class="language-dropdown">
+                    <li data-lang="en">
+                      <span class="language-flag en"></span>English
+                    </li>
+                    <li data-lang="hi">
+                      <span class="language-flag hi"></span>हिंदी (Hindi)
+                    </li>
+                  </ul>
+                </div>
                 <li class="nav-item">
                   <a class="nav-link dark_btn" href="contact.html">GET ZYE</a>
                 </li>
               </ul>
             </div>
-            <!-- Custom Dropdown in Header -->
-            <!-- <div id="custom-language" style="position: relative; z-index: 9999">
-              <select id="customLangSelect">
-                <option value="en">🌐 English</option>
-                <option value="hi">🇮🇳 Hindi</option>
-                <option value="fr">🇫🇷 French</option>
-                <option value="es">🇪🇸 Spanish</option>
-                <option value="de">🇩🇪 German</option>
-              </select>
-            </div> -->
+
             <!-- Place this where you want the language selector to appear -->
-            <div id="google_translate_element" style="margin-left: 1rem"></div>
+            <!-- <div id="google_translate_element" style="margin-left: 1rem"></div> -->
             <!-- <div class="language-selector">
               <div class="selected-language">
                 <span class="language-flag en"></span>
@@ -1190,7 +1306,7 @@
 
     <!-- <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
-    <script>
+    <!-- <script>
       let googleTranslateInitialized = false;
 
       document.addEventListener("DOMContentLoaded", function () {
@@ -1253,6 +1369,131 @@
         }, 300);
 
         setTimeout(() => clearInterval(interval), 5000);
+      }
+    </script> -->
+    <script>
+      // Track translation state
+      let translationActive = false;
+      let googleTranslateInitialized = false;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        initializeLanguageSelector();
+        initializeGoogleTranslate();
+      });
+
+      function initializeLanguageSelector() {
+        const languageSelector = document.querySelector(".language-selector");
+        if (!languageSelector) return;
+
+        const dropdown = languageSelector.querySelector(".language-dropdown");
+        const selected = languageSelector.querySelector(".selected-language");
+
+        // Toggle dropdown
+        selected.addEventListener("click", function (e) {
+          e.stopPropagation();
+          dropdown.classList.toggle("visible");
+        });
+
+        // Close dropdown when clicking elsewhere
+        document.addEventListener("click", function () {
+          dropdown.classList.remove("visible");
+        });
+
+        // Handle language selection
+        dropdown.querySelectorAll("li").forEach((item) => {
+          item.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const lang = this.getAttribute("data-lang");
+
+            // Update UI
+            selected.querySelector(".language-flag").className =
+              "language-flag " + lang;
+            selected.querySelector(".language-name").textContent =
+              this.textContent.trim();
+            dropdown.classList.remove("visible");
+
+            // Change language
+            setLanguage(lang);
+          });
+        });
+
+        // Restore saved language
+        const savedLang = localStorage.getItem("selectedLanguage");
+        if (savedLang) {
+          const langItem = dropdown.querySelector(`[data-lang="${savedLang}"]`);
+          if (langItem) {
+            selected.querySelector(".language-flag").className =
+              "language-flag " + savedLang;
+            selected.querySelector(".language-name").textContent =
+              langItem.textContent.trim();
+          }
+        }
+      }
+
+      function initializeGoogleTranslate() {
+        // Skip if already initialized
+        if (googleTranslateInitialized) return;
+
+        // Create initialization function
+        window.googleTranslateElementInit = function () {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              includedLanguages: "en,hi", // Only English and Hindi
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false,
+            },
+            "google_translate_element"
+          );
+
+          translationActive = true;
+          googleTranslateInitialized = true;
+
+          // Restore saved language
+          const savedLang = localStorage.getItem("selectedLanguage");
+          if (savedLang && savedLang !== "en") {
+            setTimeout(() => setLanguage(savedLang), 500);
+          }
+        };
+
+        // Load Google Translate script
+        const script = document.createElement("script");
+        script.src =
+          "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        script.async = true;
+        document.body.appendChild(script);
+      }
+
+      function setLanguage(lang) {
+        // Save language preference
+        localStorage.setItem("selectedLanguage", lang);
+
+        // Method 1: Use Google Translate select element
+        const select = document.querySelector(".goog-te-combo");
+        if (select) {
+          select.value = lang;
+          const event = new Event("change", { bubbles: true });
+          select.dispatchEvent(event);
+        }
+
+        // Method 2: Use Google Translate API directly
+        if (window.google && google.translate) {
+          try {
+            const instance = google.translate.TranslateElement.getInstance();
+            if (instance) {
+              instance.translate(lang, "en");
+            }
+          } catch (e) {
+            console.log("Translation API error:", e);
+          }
+        } else if (!googleTranslateInitialized) {
+          // If not initialized, initialize and try again
+          initializeGoogleTranslate();
+          setTimeout(() => setLanguage(lang), 1000);
+        }
+
+        // Method 3: Set cookie directly as fallback
+        document.cookie = `googtrans=/en/${lang}; path=/; domain=${window.location.hostname}`;
       }
     </script>
   </body>

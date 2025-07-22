@@ -21,8 +21,14 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-      /* Clean up Google's translate widget look */
       .goog-te-banner-frame,
       .goog-te-gadget-icon,
       .goog-logo-link,
@@ -55,7 +61,17 @@
       .goog-te-gadget-simple span {
         color: #3e3065 !important;
       }
+
+      .responsive-margin-top-mobile {
+        margin-top: 12rem;
+      }
+      @media only screen and (min-width: 350px) and (max-width: 500px) {
+        .responsive-margin-top-mobile {
+          margin-top: 0;
+        }
+      }
     </style>
+
     <style>
       /* Language Selector Styles */
       .language-selector {
@@ -238,262 +254,136 @@
         </div>
       </header>
 
-      <!-- App-Solution-Section-Start -->
-      <section class="row_am app_solution_section">
-        <!-- container start -->
+      <!-- Contact Us Section Start -->
+      <section class="contact_page_section responsive-margin-top-mobile">
         <div class="container">
-          <!-- row start -->
-          <div class="row">
-            <div class="col-lg-6">
-              <!-- UI content -->
-              <div class="app_text">
-                <div
-                  class="section_title"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="100"
-                >
-                  <h2>
-                    <span>Providing innovative app solution</span> to make
-                    customer life easy to grow.
-                  </h2>
-                </div>
-                <p data-aos="fade-up" data-aos-duration="1500">
-                  Lorem Ipsum is simply dummy text of the printing and type
-                  setting industry lorem Ipsum has been the industrys standard
-                  dummy text ever since the when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining to make a type speci
-                  men book. It has survived essentially unchanged.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1500">
-                  Standard dummy text ever since the when an unknown printer
-                  took a galley of type and scrambled it to make a type specien
-                  book. It has survived not only five centuries, but also the
-                  leap into electronic typesetting.
-                </p>
+          <div class="contact_inner">
+            <div class="contact_form">
+              <div class="section_title">
+                <h2>Leave a <span>message</span></h2>
+                <p>Fill up form below, our team will get back soon</p>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div
-                class="app_images"
-                data-aos="fade-in"
-                data-aos-duration="1500"
-              >
-                <ul>
-                  <li><img src="images/abt_01.png" alt="" /></li>
-                  <li>
-                    <a
-                      class="popup-youtube play-button"
-                      data-url="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
-                      data-toggle="modal"
-                      data-target="#myModal"
-                      title="About Video"
-                    >
-                      <img src="images/abt_02.png" alt="" />
-                      <div class="waves-block">
-                        <div class="waves wave-1"></div>
-                        <div class="waves wave-2"></div>
-                        <div class="waves wave-3"></div>
-                      </div>
-                      <span class="play_icon"
-                        ><img src="images/play_black.png" alt="image"
-                      /></span>
-                    </a>
-                  </li>
-                  <li><img src="images/abt_03.png" alt="" /></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- row end -->
-        </div>
-        <!-- container end -->
-      </section>
-      <!-- App-Solution-Section-end -->
-
-      <!-- Features-Section-Start -->
-      <section class="row_am features_section" id="features">
-        <!-- container start -->
-        <div class="container">
-          <div
-            class="section_title"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-delay="100"
-          >
-            <!-- h2 -->
-            <h2><span>One App. </span> Zero Hassles.</h2>
-            <!-- p -->
-            <p>
-              ZYE simplifies your life, bringing all you need on one app. No
-              more app switching, no hidden fees, no hassles.
-            </p>
-          </div>
-          <div class="feature_detail">
-            <!-- feature box left -->
-            <div class="left_data feature_box">
-              <!-- feature box -->
-              <div
-                class="data_block"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              >
-                <div class="icon">
-                  <img src="images/secure_data.png" alt="image" />
+              <form action="#">
+                <div class="form-group">
+                  <input type="text" placeholder="Name" class="form-control" />
                 </div>
-                <div class="text">
-                  <h4>Secure data</h4>
-                  <p>
-                    Your data is our priority. ZYE uses advanced encryption and
-                    security protocols to ensure your personal information stays
-                    safe and confidential—always.
-                  </p>
-                </div>
-              </div>
-
-              <!-- feature box -->
-              <div
-                class="data_block"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              >
-                <div class="icon">
-                  <img src="images/functional.png" alt="image" />
-                </div>
-                <div class="text">
-                  <h4>Fully functional</h4>
-                  <p>
-                    From booking cabs to future service expansions, ZYE is built
-                    to perform seamlessly.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- feature box right -->
-            <div class="right_data feature_box">
-              <!-- feature box -->
-              <div
-                class="data_block"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-              >
-                <div class="icon">
-                  <img src="images/live-chat.png" alt="image" />
-                </div>
-                <div class="text">
-                  <h4>Live chat</h4>
-                  <p>
-                    Need help on the go? Our in-app live chat connects you
-                    instantly with real support agents for quick resolutions.
-                  </p>
-                </div>
-              </div>
-
-              <!-- feature box -->
-              <div
-                class="data_block"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-              >
-                <div class="icon">
-                  <img src="images/support.png" alt="image" />
-                </div>
-                <div class="text">
-                  <h4>24-7 Support</h4>
-                  <p>
-                    We're always here for you. ZYE’s dedicated support team is
-                    available 24/7 to assist with any questions or issues,
-                    anytime, anywhere.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- feature image -->
-            <div
-              class="feature_img"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="100"
-            >
-              <img src="images/features_frame.png" alt="image" />
-            </div>
-          </div>
-        </div>
-        <!-- container end -->
-      </section>
-      <!-- Features-Section-end -->
-
-      <!-- Download-Free-App-section-Start  -->
-      <section class="row_am free_app_section" id="getstarted">
-        <!-- container start -->
-        <div class="container">
-          <div
-            class="free_app_inner"
-            data-aos="fade-in"
-            data-aos-duration="1500"
-            data-aos-delay="100"
-          >
-            <!-- vertical line animation -->
-            <div class="anim_line dark_bg">
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-            </div>
-            <!-- row start -->
-            <div class="row">
-              <!-- content -->
-              <div class="col-md-6">
-                <div class="free_text">
-                  <div class="section_title">
-                    <h2>Let’s download free from apple and play store</h2>
-                    <p>
-                      ZYE is free to download on both the Apple App Store and
-                      Google Play. Start your journey today — convenience is
-                      just a tap away!
-                    </p>
-                  </div>
-                  <ul class="app_btn">
-                    <li>
-                      <a href="#">
-                        <img src="images/appstore_blue.png" alt="image" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="images/googleplay_blue.png" alt="image" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- images -->
-              <div class="col-md-6">
-                <div class="free_img">
-                  <img src="images/download-screen01.png" alt="image" />
-                  <img
-                    class="mobile_mockup"
-                    src="images/download-screen02.png"
-                    alt="image"
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
                   />
                 </div>
-              </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Company Name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option value="">Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="text" placeholder="Phone" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Website"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <div class="form-group term_check">
+                  <input type="checkbox" id="term" />
+                  <label for="term"
+                    >I agree to receive emails, newsletters and promotional
+                    messages</label
+                  >
+                </div>
+                <div class="form-group mb-0">
+                  <button type="submit" class="btn puprple_btn">
+                    SEND MESSAGE
+                  </button>
+                </div>
+              </form>
             </div>
-            <!-- row end -->
+            <div class="contact_info">
+              <div class="icon">
+                <img src="images/contact_message_icon.png" alt="image" />
+              </div>
+              <div class="section_title">
+                <h2>Have any <span>question?</span></h2>
+                <p>
+                  If you have any question about our product, service, payment
+                  or company, Visit our <a href="faq.html">FAQs page.</a>
+                </p>
+              </div>
+              <a href="faq.html" class="btn puprple_btn">READ FAQ</a>
+              <ul class="contact_info_list">
+                <li>
+                  <div class="img">
+                    <img src="images/mail_icon.png" alt="image" />
+                  </div>
+                  <div class="text">
+                    <span>Email Us</span>
+                    <a href="mailto:example@gmail.com">example@gmail.com</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="img">
+                    <img src="images/call_icon.png" alt="image" />
+                  </div>
+                  <div class="text">
+                    <span>Call Us</span>
+                    <a href="tel:+1(888)553-46-11">+1 (888) 553-46-11</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="img">
+                    <img src="images/location_icon.png" alt="image" />
+                  </div>
+                  <div class="text">
+                    <span>Visit Us</span>
+                    <p>5687, Business Avenue, New York, USA 5687</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <!-- container end -->
       </section>
-      <!-- Download-Free-App-section-end  -->
+      <!-- Contact Us Section End -->
+
+      <!-- Map Section Start -->
+      <section class="row_am map_section">
+        <div class="container">
+          <div class="map_inner">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-74.25987584510595!3d40.69767006338158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1664399300741!5m2!1sen!2sin"
+              width="100%"
+              height="510"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- Map Section End -->
 
       <!-- News-Letter-Section-Start -->
       <section class="newsletter_section">
