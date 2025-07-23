@@ -203,7 +203,10 @@
                 <!-- Your existing menu items -->
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                 <li class="nav-item">
-                  <a class="nav-link" href="features.html">Features</a>
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="how-it-works.html">How it works</a>
@@ -212,7 +215,7 @@
                   <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <!-- Custom Dropdown in Header -->
-                <div class="language-selector">
+                <!-- <div class="language-selector">
                   <div class="selected-language">
                     <span class="language-flag en"></span>
                     <span class="language-name">English</span>
@@ -226,7 +229,25 @@
                       <span class="language-flag hi"></span>हिंदी (Hindi)
                     </li>
                   </ul>
-                </div>
+                </div> -->
+                <!-- Custom Dropdown in Header -->
+                <li class="nav-item language-selector-container">
+                  <div class="language-selector">
+                    <div class="selected-language">
+                      <span class="language-flag en"></span>
+                      <span class="language-name">English</span>
+                      <i class="dropdown-arrow">▼</i>
+                    </div>
+                    <ul class="language-dropdown">
+                      <li data-lang="en" data-url="/">
+                        <span class="language-flag en"></span>English
+                      </li>
+                      <li data-lang="hi" data-url="/hi/">
+                        <span class="language-flag hi"></span>हिंदी (Hindi)
+                      </li>
+                    </ul>
+                  </div>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link dark_btn" href="contact.html">GET ZYE</a>
                 </li>
@@ -1496,5 +1517,101 @@
         document.cookie = `googtrans=/en/${lang}; path=/; domain=${window.location.hostname}`;
       }
     </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const languageSelector = document.querySelector(".language-selector");
+        const selectedLanguage =
+          languageSelector.querySelector(".selected-language");
+        const languageDropdown =
+          languageSelector.querySelector(".language-dropdown");
+        const languageItems = languageDropdown.querySelectorAll("li");
+
+        // Toggle dropdown visibility
+        selectedLanguage.addEventListener("click", function (e) {
+          e.stopPropagation();
+          languageDropdown.style.display =
+            languageDropdown.style.display === "block" ? "none" : "block";
+        });
+
+        // Handle language selection
+        languageItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            const lang = this.getAttribute("data-lang");
+            const url = this.getAttribute("data-url");
+
+            // Update selected language display
+            const flag = this.querySelector(".language-flag").className;
+            const name = this.textContent.trim();
+
+            selectedLanguage.querySelector(".language-flag").className = flag;
+            selectedLanguage.querySelector(".language-name").textContent = name;
+
+            // Close dropdown
+            languageDropdown.style.display = "none";
+
+            // Navigate to the selected language page
+            window.location.href = url;
+          });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function () {
+          languageDropdown.style.display = "none";
+        });
+      });
+    </script>
+
+    <style>
+      /* Add these styles if not already present */
+      .language-selector-container {
+        position: relative;
+      }
+
+      .language-selector {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .language-dropdown {
+        display: none;
+        position: absolute;
+        right: 0;
+        background: white;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 4px;
+      }
+
+      .language-dropdown li {
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .language-dropdown li:hover {
+        background: #f5f5f5;
+      }
+
+      .language-flag {
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        margin-right: 8px;
+        background-size: cover;
+      }
+
+      .language-flag.en {
+        background-image: url("images/english.png");
+      }
+
+      .language-flag.hi {
+        background-image: url("images/hindi.png");
+      }
+    </style>
   </body>
 </html>

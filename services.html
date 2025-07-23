@@ -21,11 +21,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
 
     <style>
@@ -210,7 +208,10 @@
                 <!-- Your existing menu items -->
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                 <li class="nav-item">
-                  <a class="nav-link" href="features.html">Features</a>
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="how-it-works.html">How it works</a>
@@ -219,109 +220,57 @@
                   <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <!-- Custom Dropdown in Header -->
-                <div class="language-selector">
-                  <div class="selected-language">
-                    <span class="language-flag en"></span>
-                    <span class="language-name">English</span>
-                    <i class="dropdown-arrow">▼</i>
+                <li class="nav-item language-selector-container">
+                  <div class="language-selector">
+                    <div class="selected-language">
+                      <span class="language-flag en"></span>
+                      <span class="language-name">English</span>
+                      <i class="dropdown-arrow">▼</i>
+                    </div>
+                    <ul class="language-dropdown">
+                      <li data-lang="en" data-url="/">
+                        <span class="language-flag en"></span>English
+                      </li>
+                      <li data-lang="hi" data-url="/hi/">
+                        <span class="language-flag hi"></span>हिंदी (Hindi)
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="language-dropdown">
-                    <li data-lang="en">
-                      <span class="language-flag en"></span>English
-                    </li>
-                    <li data-lang="hi">
-                      <span class="language-flag hi"></span>हिंदी (Hindi)
-                    </li>
-                  </ul>
-                </div>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link dark_btn" href="contact.html">GET ZYE</a>
                 </li>
               </ul>
             </div>
+
             <!-- Place this where you want the language selector to appear -->
             <!-- <div id="google_translate_element" style="margin-left: 1rem"></div> -->
+            <!-- <div class="language-selector">
+              <div class="selected-language">
+                <span class="language-flag en"></span>
+                <span class="language-name">English</span>
+                <i class="dropdown-arrow">▼</i>
+              </div>
+              <ul class="language-dropdown">
+                <li data-lang="en">
+                  <span class="language-flag en"></span>English
+                </li>
+                <li data-lang="es">
+                  <span class="language-flag es"></span>Español
+                </li>
+                <li data-lang="fr">
+                  <span class="language-flag fr"></span>Français
+                </li>
+                <li data-lang="de">
+                  <span class="language-flag de"></span>Deutsch
+                </li>
+              </ul>
+            </div> -->
           </nav>
         </div>
       </header>
 
-      <!-- App-Solution-Section-Start -->
-      <section class="row_am app_solution_section">
-        <!-- container start -->
-        <div class="container">
-          <!-- row start -->
-          <div class="row">
-            <div class="col-lg-6">
-              <!-- UI content -->
-              <div class="app_text">
-                <div
-                  class="section_title"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="100"
-                >
-                  <h2>
-                    <span>Providing innovative app solution</span> to make
-                    customer life easy to grow.
-                  </h2>
-                </div>
-                <p data-aos="fade-up" data-aos-duration="1500">
-                  Lorem Ipsum is simply dummy text of the printing and type
-                  setting industry lorem Ipsum has been the industrys standard
-                  dummy text ever since the when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining to make a type speci
-                  men book. It has survived essentially unchanged.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1500">
-                  Standard dummy text ever since the when an unknown printer
-                  took a galley of type and scrambled it to make a type specien
-                  book. It has survived not only five centuries, but also the
-                  leap into electronic typesetting.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div
-                class="app_images"
-                data-aos="fade-in"
-                data-aos-duration="1500"
-              >
-                <ul>
-                  <li><img src="images/abt_01.png" alt="" /></li>
-                  <li>
-                    <a
-                      class="popup-youtube play-button"
-                      data-url="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
-                      data-toggle="modal"
-                      data-target="#myModal"
-                      title="About Video"
-                    >
-                      <img src="images/abt_02.png" alt="" />
-                      <div class="waves-block">
-                        <div class="waves wave-1"></div>
-                        <div class="waves wave-2"></div>
-                        <div class="waves wave-3"></div>
-                      </div>
-                      <span class="play_icon"
-                        ><img src="images/play_black.png" alt="image"
-                      /></span>
-                    </a>
-                  </li>
-                  <li><img src="images/abt_03.png" alt="" /></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- row end -->
-        </div>
-        <!-- container end -->
-      </section>
-      <!-- App-Solution-Section-end -->
-
-      <!-- Features-Section-Start -->
-      <section class="row_am features_section" id="features">
+      <section class="row_am trusted_section">
         <!-- container start -->
         <div class="container">
           <div
@@ -331,107 +280,332 @@
             data-aos-delay="100"
           >
             <!-- h2 -->
-            <h2><span>One App. </span> Zero Hassles.</h2>
+            <h2>Our <span>Booking</span> Services</h2>
             <!-- p -->
             <p>
-              ZYE simplifies your life, bringing all you need on one app. No
-              more app switching, no hidden fees, no hassles.
+              Everything you need, just a click away. Experience seamless
+              service booking with transparent <br />
+              pricing and zero hidden fees.
             </p>
-          </div>
-          <div class="feature_detail">
-            <!-- feature box left -->
-            <div class="left_data feature_box">
-              <!-- feature box -->
-              <div
-                class="data_block"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              >
-                <div class="icon">
-                  <img src="images/secure_data.png" alt="image" />
-                </div>
-                <div class="text">
-                  <h4>Secure data</h4>
-                  <p>
-                    Your data is our priority. ZYE uses advanced encryption and
-                    security protocols to ensure your personal information stays
-                    safe and confidential—always.
-                  </p>
-                </div>
-              </div>
-
-              <!-- feature box -->
-              <div
-                class="data_block"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              >
-                <div class="icon">
-                  <img src="images/functional.png" alt="image" />
-                </div>
-                <div class="text">
-                  <h4>Fully functional</h4>
-                  <p>
-                    From booking cabs to future service expansions, ZYE is built
-                    to perform seamlessly.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- feature box right -->
-            <div class="right_data feature_box">
-              <!-- feature box -->
-              <div
-                class="data_block"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-              >
-                <div class="icon">
-                  <img src="images/live-chat.png" alt="image" />
-                </div>
-                <div class="text">
-                  <h4>Live chat</h4>
-                  <p>
-                    Need help on the go? Our in-app live chat connects you
-                    instantly with real support agents for quick resolutions.
-                  </p>
-                </div>
-              </div>
-
-              <!-- feature box -->
-              <div
-                class="data_block"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-              >
-                <div class="icon">
-                  <img src="images/support.png" alt="image" />
-                </div>
-                <div class="text">
-                  <h4>24-7 Support</h4>
-                  <p>
-                    We're always here for you. ZYE’s dedicated support team is
-                    available 24/7 to assist with any questions or issues,
-                    anytime, anywhere.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- feature image -->
-            <div
-              class="feature_img"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="100"
-            >
-              <img src="images/features_frame.png" alt="image" />
-            </div>
           </div>
         </div>
         <!-- container end -->
       </section>
-      <!-- Features-Section-end -->
+
+      <!-- Services 1 Starts  -->
+      <section class="row_am blog_list_main">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1500">
+              <div class="blog_img">
+                <img src="images/blod-detail.png" alt="image" />
+                <!-- <span>20 min ago</span> -->
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="blog_text">
+                <span class="choice_badge">ZYE CHOICE</span>
+                <div class="section_title">
+                  <h2>Cabs/Auto – Ride Easy!</h2>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> No operator
+                    charges for Service Providers – it's Lifetime Free!
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Real-time
+                    tracking with live updates
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> No hidden
+                    charges or surge pricing
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Schedule
+                    rides in advance
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> SOS safety
+                    features & emergency support
+                  </p>
+                  <a href="#"
+                    >ZYE RYDES
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Services 1 Ends-->
+      <!-- Services 2 Starts  -->
+      <section class="row_am blog_list_main">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="blog_text">
+                <span class="choice_badge">ZYE CHOICE</span>
+                <div class="section_title">
+                  <h2>Food & Grocery – Fresh, Fast</h2>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> No operator
+                    charges for Service Providers – it's Lifetime Free!
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Top
+                    restaurants and fresh supermarkets
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Live order
+                    tracking from prep to delivery
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Contactless
+                    delivery options
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Zero
+                    commission markups on menu prices
+                  </p>
+                  <a href="#"
+                    >ZYE RYDES
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1500">
+              <div class="blog_img">
+                <img src="images/blod-detail.png" alt="image" />
+                <!-- <span>20 min ago</span> -->
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Services 2 Ends-->
+      <!-- Services 3 Starts  -->
+      <section class="row_am blog_list_main">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1500">
+              <div class="blog_img">
+                <img src="images/blod-detail.png" alt="image" />
+                <!-- <span>20 min ago</span> -->
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="blog_text">
+                <span class="choice_badge">ZYE CHOICE</span>
+                <div class="section_title">
+                  <h2>Flights – Business or Vacation</h2>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Best deals
+                    with flexible date options
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Instant
+                    alerts on price changes & delays
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Seat
+                    selection and meal preferences
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> 100%
+                    transparent pricing with no hidden fees
+                  </p>
+
+                  <a href="#"
+                    >ZYE RYDES
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Services 3 Ends-->
+      <!-- Services 4 Starts  -->
+      <section class="row_am blog_list_main">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="blog_text">
+                <span class="choice_badge">ZYE CHOICE</span>
+                <div class="section_title">
+                  <h2>Medicine Delivery</h2>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> No operator
+                    charges for Service Providers – it's Lifetime Free!
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Easy
+                    prescription uploads via camera
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Wide range of
+                    over-the-counter medications
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Free in-app
+                    pharmacist consultations
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Priority
+                    urgent delivery within 30 minutes
+                  </p>
+
+                  <a href="#"
+                    >ZYE RYDES
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1500">
+              <div class="blog_img">
+                <img src="images/blod-detail.png" alt="image" />
+                <!-- <span>20 min ago</span> -->
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Services 4 Ends-->
+      <!-- Services 5 Starts  -->
+      <section class="row_am blog_list_main">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1500">
+              <div class="blog_img">
+                <img src="images/blod-detail.png" alt="image" />
+                <!-- <span>20 min ago</span> -->
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="blog_text">
+                <span class="choice_badge">ZYE CHOICE</span>
+                <div class="section_title">
+                  <h2>Movie Tickets</h2>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Browse movies
+                    with HD trailers & reviews
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Interactive
+                    seating charts with real-time availability
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Exclusive
+                    ticket discounts and food combos
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Skip the
+                    queue with mobile ticket scanning
+                  </p>
+
+                  <a href="#"
+                    >ZYE RYDES
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Services 5 Ends-->
+      <!-- Services 6 Starts  -->
+      <section class="row_am blog_list_main">
+        <!-- container start -->
+        <div class="container">
+          <!-- row start -->
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="blog_text">
+                <span class="choice_badge">ZYE CHOICE</span>
+                <div class="section_title">
+                  <h2>Home Services</h2>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> No operator
+                    charges for Service Providers – it's Lifetime Free!
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> 100% verified
+                    and background-checked professionals
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span>
+                    Customer-rated experts with detailed reviews
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> Upfront
+                    transparent pricing with no surprises
+                  </p>
+                  <p>
+                    <span><i class="fa-solid fa-check"></i></span> 24/7
+                    emergency services for urgent needs
+                  </p>
+
+                  <a href="#"
+                    >ZYE RYDES
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1500">
+              <div class="blog_img">
+                <img src="images/blod-detail.png" alt="image" />
+                <!-- <span>20 min ago</span> -->
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Services 6 Ends-->
+
+      <section class="row_am trusted_section">
+        <!-- container start -->
+        <div class="container">
+          <div
+            class="section_title"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <!-- h2 -->
+            <h3>
+              ✨ All services, one app. Zero hassles, maximum convenience.
+            </h3>
+          </div>
+        </div>
+        <!-- container end -->
+      </section>
 
       <!-- Download-Free-App-section-Start  -->
       <section class="row_am free_app_section" id="getstarted">
@@ -501,6 +675,97 @@
         <!-- container end -->
       </section>
       <!-- Download-Free-App-section-end  -->
+
+      <!-- Story-Section-Start -->
+      <section class="row_am latest_story" id="blog">
+        <!-- container start -->
+        <div class="container">
+          <div
+            class="section_title"
+            data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <h2>Read latest <span>story</span></h2>
+            <p>
+              Stay in the loop with the latest updates, features, and what’s
+              brewing inside the ZYE universe.<br />
+              Because every update has a story — and we love telling it.
+            </p>
+          </div>
+          <!-- row start -->
+          <div class="row">
+            <!-- story -->
+            <div class="col-md-4">
+              <div
+                class="story_box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <div class="story_img">
+                  <img src="images/story01.png" alt="image" />
+                  <span>45 min ago</span>
+                </div>
+                <div class="story_text">
+                  <h3>Cool features added!</h3>
+                  <p>
+                    Discover the latest updates that make ZYE faster, smarter,
+                    and even more fun to use.
+                  </p>
+                  <a href="#">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- story -->
+            <div class="col-md-4">
+              <div
+                class="story_box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <div class="story_img">
+                  <img src="images/story02.png" alt="image" />
+                  <span>45 min ago</span>
+                </div>
+                <div class="story_text">
+                  <h3>Top rated app! Yupp.</h3>
+                  <p>
+                    ZYE is winning hearts — rated high by users who love
+                    simplicity and reliability.
+                  </p>
+                  <a href="#">READ MORE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- story -->
+            <div class="col-md-4">
+              <div
+                class="story_box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <div class="story_img">
+                  <img src="images/story03.png" alt="image" />
+                  <span>45 min ago</span>
+                </div>
+                <div class="story_text">
+                  <h3>Creative ideas on app.</h3>
+                  <p>
+                    We’re constantly innovating — bringing fresh, user-inspired
+                    ideas to life in every update.
+                  </p>
+                  <a href="#">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- container end -->
+      </section>
+      <!-- Story-Section-end -->
 
       <!-- News-Letter-Section-Start -->
       <section class="newsletter_section">
@@ -910,5 +1175,101 @@
         document.cookie = `googtrans=/en/${lang}; path=/; domain=${window.location.hostname}`;
       }
     </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const languageSelector = document.querySelector(".language-selector");
+        const selectedLanguage =
+          languageSelector.querySelector(".selected-language");
+        const languageDropdown =
+          languageSelector.querySelector(".language-dropdown");
+        const languageItems = languageDropdown.querySelectorAll("li");
+
+        // Toggle dropdown visibility
+        selectedLanguage.addEventListener("click", function (e) {
+          e.stopPropagation();
+          languageDropdown.style.display =
+            languageDropdown.style.display === "block" ? "none" : "block";
+        });
+
+        // Handle language selection
+        languageItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            const lang = this.getAttribute("data-lang");
+            const url = this.getAttribute("data-url");
+
+            // Update selected language display
+            const flag = this.querySelector(".language-flag").className;
+            const name = this.textContent.trim();
+
+            selectedLanguage.querySelector(".language-flag").className = flag;
+            selectedLanguage.querySelector(".language-name").textContent = name;
+
+            // Close dropdown
+            languageDropdown.style.display = "none";
+
+            // Navigate to the selected language page
+            window.location.href = url;
+          });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function () {
+          languageDropdown.style.display = "none";
+        });
+      });
+    </script>
+
+    <style>
+      /* Add these styles if not already present */
+      .language-selector-container {
+        position: relative;
+      }
+
+      .language-selector {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .language-dropdown {
+        display: none;
+        position: absolute;
+        right: 0;
+        background: white;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 4px;
+      }
+
+      .language-dropdown li {
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .language-dropdown li:hover {
+        background: #f5f5f5;
+      }
+
+      .language-flag {
+        display: inline-block;
+        width: 20px;
+        height: 15px;
+        margin-right: 8px;
+        background-size: cover;
+      }
+
+      .language-flag.en {
+        background-image: url("images/english.png");
+      }
+
+      .language-flag.hi {
+        background-image: url("images/hindi.png");
+      }
+    </style>
   </body>
 </html>

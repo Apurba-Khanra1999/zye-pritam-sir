@@ -21,12 +21,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
-
     <style>
-      /* Clean up Google's translate widget look */
       .goog-te-banner-frame,
       .goog-te-gadget-icon,
       .goog-logo-link,
@@ -58,6 +53,15 @@
 
       .goog-te-gadget-simple span {
         color: #3e3065 !important;
+      }
+
+      .responsive-margin-top-mobile {
+        margin-top: 12rem;
+      }
+      @media only screen and (min-width: 350px) and (max-width: 500px) {
+        .responsive-margin-top-mobile {
+          margin-top: 0;
+        }
       }
     </style>
 
@@ -186,7 +190,7 @@
         <div class="container">
           <!-- navigation bar -->
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/hi/">
               <img src="images/logo.png" alt="image" />
             </a>
 
@@ -206,18 +210,50 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <!-- Your existing menu items -->
-                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                 <li class="nav-item">
-                  <a class="nav-link" href="features.html">Features</a>
+                  <a class="nav-link" href="/hi/">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="how-it-works.html">How it works</a>
+                  <a class="nav-link" href="/hi/about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="/hi/services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/hi/how-it-works.html"
+                    >How it works</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/hi/contact.html">Contact</a>
                 </li>
                 <!-- Custom Dropdown in Header -->
-            <div class="language-selector">
+                <li class="nav-item language-selector-container">
+                  <div class="language-selector">
+                    <div class="selected-language">
+                      <span class="language-flag en"></span>
+                      <span class="language-name">English</span>
+                      <i class="dropdown-arrow">▼</i>
+                    </div>
+                    <ul class="language-dropdown">
+                      <li data-lang="en" data-url="/">
+                        <span class="language-flag en"></span>English
+                      </li>
+                      <li data-lang="hi" data-url="/hi/">
+                        <span class="language-flag hi"></span>हिंदी (Hindi)
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dark_btn" href="contact.html">GET ZYE</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Place this where you want the language selector to appear -->
+            <!-- <div id="google_translate_element" style="margin-left: 1rem"></div> -->
+            <!-- <div class="language-selector">
               <div class="selected-language">
                 <span class="language-flag en"></span>
                 <span class="language-name">English</span>
@@ -227,457 +263,285 @@
                 <li data-lang="en">
                   <span class="language-flag en"></span>English
                 </li>
-                <li data-lang="hi">
-                  <span class="language-flag hi"></span>हिंदी (Hindi)
+                <li data-lang="es">
+                  <span class="language-flag es"></span>Español
+                </li>
+                <li data-lang="fr">
+                  <span class="language-flag fr"></span>Français
+                </li>
+                <li data-lang="de">
+                  <span class="language-flag de"></span>Deutsch
                 </li>
               </ul>
-            </div>
-                <li class="nav-item">
-                  <a class="nav-link dark_btn" href="contact.html">GET ZYE</a>
-                </li>
-              </ul>
-            </div>
-            <!-- Place this where you want the language selector to appear -->
-            <!-- <div id="google_translate_element" style="margin-left: 1rem"></div> -->
+            </div> -->
           </nav>
         </div>
       </header>
 
-      <!-- How-It-Workes-Section-Start -->
-      <section class="row_am how_it_works" id="how_it_work">
+      <section class="row_am trusted_section">
         <!-- container start -->
         <div class="container">
-          <div class="how_it_inner">
-            <div
-              class="section_title"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="300"
-            >
-              <!-- h2 -->
-              <h2><span>How it works</span> - 3 easy steps</h2>
-              <!-- p -->
-              <p>
-                Download the ZYE App, sign up in seconds, and book your ride
-                with just a tap.
-              </p>
+          <div
+            class="section_title"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="100"
+          >
+            <!-- h2 -->
+            <h2>Get in <span>Touch</span> with ZYE</h2>
+            <!-- p -->
+            <p>
+              We're here to help you 24/7! Have questions or need assistance?
+              Reach out through any of our channels.
+            </p>
+          </div>
+        </div>
+        <!-- container end -->
+      </section>
+
+      <!--Review List Section Start-->
+      <section class="row_am review_list_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="review_box">
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>Call Us</h3>
+                <p>+91 91088 05469</p>
+                <p>
+                  Our support team is available 24/7 to assist you with any
+                  questions or concerns.
+                </p>
+              </div>
             </div>
-            <div class="step_block">
-              <!-- UL -->
-              <ul>
-                <!-- step -->
+            <div class="col-lg-4 col-md-6">
+              <div class="review_box">
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>Email Us</h3>
+                <p>contact.zye@hyperdock.in</p>
+                <p>
+                  Send us an email and we'll respond within 24 hours with
+                  detailed assistance.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review_box">
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                    <li>
+                      <span><i class="icofont-star"></i></span>
+                    </li>
+                  </ul>
+                </div>
+                <h3>Visit Us</h3>
+                <p>Thalagattapura, Bengaluru 560109, KA, India</p>
+                <p>
+                  Visit our headquarters for in-person support and business
+                  partnerships.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Review List Section End -->
+
+      <!-- Contact Us Section Start -->
+      <section class="contact_page_section responsive-margin-top-mobile">
+        <div class="container">
+          <div class="contact_inner">
+            <div class="contact_form">
+              <div class="section_title">
+                <h2>Leave a <span>message</span></h2>
+                <p>Fill up form below, our team will get back soon</p>
+              </div>
+              <form action="#">
+                <div class="form-group">
+                  <input type="text" placeholder="Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
+                  />
+                </div>
+                <!-- <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Company Name"
+                    class="form-control"
+                  />
+                </div> -->
+                <!-- <div class="form-group">
+                  <select class="form-control">
+                    <option value="">Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                  </select>
+                </div> -->
+                <div class="form-group">
+                  <input type="text" placeholder="Phone" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option value="General Information">
+                      General Information
+                    </option>
+                    <option value="Cab/Auto Services">Cab/Auto Services</option>
+                    <option value="Food Delivery">Food Delivery</option>
+                    <option value="Flight Booking">Flight Booking</option>
+                    <option value="Medicine Delivery">Medicine Delivery</option>
+                    <option value="Business Partnership">
+                      Business Partnership
+                    </option>
+                  </select>
+                </div>
+                <!-- <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Website"
+                    class="form-control"
+                  />
+                </div> -->
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <!-- <div class="form-group term_check">
+                  <input type="checkbox" id="term" />
+                  <label for="term"
+                    >I agree to receive emails, newsletters and promotional
+                    messages</label
+                  >
+                </div> -->
+                <div class="form-group mb-0">
+                  <button type="submit" class="btn puprple_btn">
+                    SEND MESSAGE
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="contact_info">
+              <div class="icon">
+                <img src="images/contact_message_icon.png" alt="image" />
+              </div>
+              <div class="section_title">
+                <h2>Have any <span>question?</span></h2>
+                <p>
+                  If you have any question about our product, service, payment
+                  or company, Visit our <a href="faq.html">FAQs page.</a>
+                </p>
+              </div>
+              <a href="faq.html" class="btn puprple_btn">READ FAQ</a>
+              <ul class="contact_info_list">
                 <li>
-                  <div
-                    class="step_text"
-                    data-aos="fade-right"
-                    data-aos-duration="1500"
-                  >
-                    <h4>Download app</h4>
-                    <div class="app_icon">
-                      <a href="#"
-                        ><i class="icofont-brand-android-robot"></i
-                      ></a>
-                      <a href="#"><i class="icofont-brand-apple"></i></a>
-                      <a href="#"><i class="icofont-brand-windows"></i></a>
-                    </div>
-                    <p>Download App either for Windows, Mac or Android</p>
+                  <div class="img">
+                    <img src="images/mail_icon.png" alt="image" />
                   </div>
-                  <div class="step_number">
-                    <h3>01</h3>
-                  </div>
-                  <div
-                    class="step_img"
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                  >
-                    <img src="images/download_app.jpg" alt="image" />
+                  <div class="text">
+                    <span>Email Us</span>
+                    <a href="mailto:contact.zye@hyperdock.in"
+                      >contact.zye@hyperdock.in</a
+                    >
                   </div>
                 </li>
-
-                <!-- step -->
                 <li>
-                  <div
-                    class="step_text"
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                  >
-                    <h4>Create account</h4>
-                    <span>Login to access. It's Free.</span>
-                    <p>
-                      Sign up free for App account. One account for all devices.
-                    </p>
+                  <div class="img">
+                    <img src="images/call_icon.png" alt="image" />
                   </div>
-                  <div class="step_number">
-                    <h3>02</h3>
-                  </div>
-                  <div
-                    class="step_img"
-                    data-aos="fade-right"
-                    data-aos-duration="1500"
-                  >
-                    <img src="images/create_account.jpg" alt="image" />
+                  <div class="text">
+                    <span>Call Us</span>
+                    <a href="tel:+91 91088 05469">+91 91088 05469</a>
                   </div>
                 </li>
-
-                <!-- step -->
                 <li>
-                  <div
-                    class="step_text"
-                    data-aos="fade-right"
-                    data-aos-duration="1500"
-                  >
-                    <h4>It’s done, enjoy the app</h4>
-                    <span>Have any questions check with our Team</span>
-                    <p>
-                      Get most amazing app experience,Explore and share the app
-                    </p>
+                  <div class="img">
+                    <img src="images/location_icon.png" alt="image" />
                   </div>
-                  <div class="step_number">
-                    <h3>03</h3>
-                  </div>
-                  <div
-                    class="step_img"
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                  >
-                    <img src="images/enjoy_app.jpg" alt="image" />
+                  <div class="text">
+                    <span>Visit Us</span>
+                    <p>Thalagattapura, Bengaluru 560109, KA, India</p>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-
-          <!-- video section start -->
-          <div class="yt_video" data-aos="fade-in" data-aos-duration="1500">
-            <!-- animation line -->
-            <div class="anim_line dark_bg">
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-              <span><img src="images/anim_line.png" alt="anim_line" /></span>
-            </div>
-            <div class="thumbnil">
-              <img src="images/yt_thumb.png" alt="image" />
-              <a
-                class="popup-youtube play-button"
-                data-url="#"
-                data-toggle="modal"
-                data-target="#myModal"
-                title="XJj2PbenIsU"
-              >
-                <span class="play_btn">
-                  <img src="images/play_icon.png" alt="image" />
-                  <div class="waves-block">
-                    <div class="waves wave-1"></div>
-                    <div class="waves wave-2"></div>
-                    <div class="waves wave-3"></div>
-                  </div>
-                </span>
-                Let’s see virtually how it works
-                <span>Watch video</span>
-              </a>
-            </div>
-          </div>
-          <!-- video section end -->
-        </div>
-        <!-- container end -->
-      </section>
-      <!-- How-It-Workes-Section-end -->
-
-      <!-- Why we are section Start -->
-      <section class="row_am why_we_section" data-aos="fade-in">
-        <div class="why_inner">
-          <div class="container">
-            <div
-              class="section_title"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="100"
-            >
-              <h2><span>Why we are different</span> from others!</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typese
-                tting <br />
-                indus orem Ipsum has beenthe standard dummy.
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-lg-3">
-                <div
-                  class="why_box"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="100"
-                >
-                  <div class="icon">
-                    <img src="images/secure.png" alt="image" />
-                  </div>
-                  <div class="text">
-                    <h3>Secure code</h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and type
-                      setting indus ideas.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div
-                  class="why_box"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="200"
-                >
-                  <div class="icon">
-                    <img src="images/abt_functional.png" alt="image" />
-                  </div>
-                  <div class="text">
-                    <h3>Fully functional</h3>
-                    <p>
-                      Simply dummy text of the printing and typesetting indus
-                      lorem Ipsum is dummy.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div
-                  class="why_box"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="300"
-                >
-                  <div class="icon">
-                    <img src="images/communication.png" alt="image" />
-                  </div>
-                  <div class="text">
-                    <h3>Best communication</h3>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and type
-                      setting indus ideas.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <div
-                  class="why_box"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  data-aos-delay="400"
-                >
-                  <div class="icon">
-                    <img src="images/abt_support.png" alt="image" />
-                  </div>
-                  <div class="text">
-                    <h3>24-7 Support</h3>
-                    <p>
-                      Simply dummy text of the printing and typesetting indus
-                      lorem Ipsum is dummy.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
-      <!-- Why we are section End -->
+      <!-- Contact Us Section End -->
 
-    <!-- FAQ-Section start -->
-    <section class="row_am faq_section">
-      <!-- container start -->
-      <div class="container">
-
-        <!-- faq data -->
-        <div class="faq_panel">
-          <div class="accordion" id="accordionExample">
-
-            <div class="card" data-aos="fade-up" >
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link active" data-toggle="collapse" data-target="#collapseOne">
-                    <i class="icon_faq icofont-plus"></i></i> How can i pay ?</button>
-                </h2>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" data-aos="fade-up" >
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseTwo"><i class="icon_faq icofont-plus"></i></i> How to setup account ?</button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" data-aos="fade-up" >
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseThree"><i class="icon_faq icofont-plus"></i></i>What is process to get refund
-                    ?</button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" data-aos="fade-up" >
-              <div class="card-header" id="headingFour">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseFour"><i class="icon_faq icofont-plus"></i></i>What is process to get refund ?
-                  </button>
-                </h2>
-              </div>
-
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" data-aos="fade-up" >
-              <div class="card-header" id="headingFive">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseFive"><i class="icon_faq icofont-plus"></i></i>Can i get code bug support for customization ?
-                  </button>
-                </h2>
-              </div>
-
-              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" data-aos="fade-up" >
-              <div class="card-header" id="headingSix">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseSix"><i class="icon_faq icofont-plus"></i></i>Lorem Ipsum is simply dummy text of the printing and typesetting ?
-                  </button>
-                </h2>
-              </div>
-
-              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" data-aos="fade-up" >
-              <div class="card-header" id="headingSeven">
-                <h2 class="mb-0">
-                  <button type="button" class="btn btn-link collapsed" data-toggle="collapse"
-                    data-target="#collapseSeven"><i class="icon_faq icofont-plus"></i></i>Lorem Ipsum is simply dummy text of the printing and typesetting ?
-                  </button>
-                </h2>
-              </div>
-
-              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                <div class="card-body">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has. been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five cen turies but also the
-                    leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-      <!-- container end -->
-    </section>
-    <!-- FAQ-Section end -->
-
-     <!-- Download-Free-App-section-Start  -->
-     <section class="row_am free_app_section review_freeapp" id="getstarted">
-    	<!-- container start -->
+      <!-- Map Section Start -->
+      <section class="row_am map_section">
         <div class="container">
-            <div class="free_app_inner" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="100">
-              	<!-- row start -->
-                <div class="row">
-                	<!-- content -->
-                    <div class="col-md-6">
-                        <div class="free_text">
-                            <div class="section_title">
-                                <h2>Let’s download free from apple and play store</h2>
-                                <p>Instant free download from apple and play store orem Ipsum is simply dummy text of the printing.
-                                  and typese tting indus orem Ipsum has beenthe standard</p>
-                            </div>
-                            <ul class="app_btn">
-                              <li>
-                                <a href="#">
-                                  <img src="images/appstore_blue.png" alt="image" >
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <img src="images/googleplay_blue.png" alt="image" >
-                                </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- images -->
-                    <div class="col-md-6">
-                        <div class="free_img">
-                            <img src="images/download-screen01.png" alt="image" >
-                            <img class="mobile_mockup" src="images/download-screen02.png" alt="image" >
-                        </div>
-                    </div>
-                </div>
-                <!-- row end -->
-            </div>
+          <div class="map_inner">
+            <iframe
+              id="dynamicMap"
+              src="about:blank"
+              width="100%"
+              height="510"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <!-- container end -->
-    </section>
-    <!-- Download-Free-App-section-end  -->
+      </section>
+      <!-- Map Section End -->
 
       <!-- News-Letter-Section-Start -->
       <section class="newsletter_section">
@@ -1086,6 +950,39 @@
         // Method 3: Set cookie directly as fallback
         document.cookie = `googtrans=/en/${lang}; path=/; domain=${window.location.hostname}`;
       }
+    </script>
+
+    <script>
+      // Function to update the map with user's current location
+      function updateMapWithUserLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            function (position) {
+              const latitude = position.coords.latitude;
+              const longitude = position.coords.longitude;
+
+              // Update the iframe src with the new coordinates
+              const mapIframe = document.getElementById("dynamicMap");
+              mapIframe.src = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI3JzQ5LjQiTiA3NMKwMDcnNDAuNyJX!5e0!3m2!1sen!2sus!4v1664400000000!5m2!1sen!2sus`;
+            },
+            function (error) {
+              // If geolocation fails, fall back to default location (New York)
+              console.error("Error getting location:", error);
+              const mapIframe = document.getElementById("dynamicMap");
+              mapIframe.src =
+                "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-74.25987584510595!3d40.69767006338158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1664399300741!5m2!1sen!2sin";
+            }
+          );
+        } else {
+          // Geolocation not supported, fall back to default location
+          const mapIframe = document.getElementById("dynamicMap");
+          mapIframe.src =
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-74.25987584510595!3d40.69767006338158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1664399300741!5m2!1sen!2sin";
+        }
+      }
+
+      // Call the function when the page loads
+      window.addEventListener("DOMContentLoaded", updateMapWithUserLocation);
     </script>
   </body>
 </html>
